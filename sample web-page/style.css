@@ -1,0 +1,388 @@
+.nav{
+    background-color: white;
+    width: 100%;
+    z-index: 9;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.15);
+
+}
+.nav_top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    padding-top: 20px;
+}
+.nav_side {
+    float: right;  
+    padding-right: 80px; 
+}
+.nav_side a{
+    text-decoration: none;
+    margin-right: 20px;
+    padding-top: 20px;
+    color: rgb(16, 16, 95);
+    font-weight: bold;
+    font-family: cosmic, sans-serif;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+
+}
+.nav_side a:hover{
+    color: rgb(255, 123, 0);
+}
+.main{
+    background-image: url(https://studentaffairs.ucdavis.edu/sites/g/files/dgvnsk8726/files/styles/sf_landscape_16x9/public/images/article/studying_crop.jpg?h=c673cd1c&amp;itok=w4OgLL05);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+}
+.main .main_content{
+    padding-top: 18%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.main .main_content h2{
+    color: rgb(16, 16, 95);;
+    font-size: 50px;
+    font-family: cosmic,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+.main .main_content h2 span{
+    font-size: 12px;
+    opacity: 0.7;
+    font-weight: 400px;
+    color: white;
+    line-height: 10px;
+}
+.main .main_content .btn{
+    margin: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+.main .main_content .btn a{
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: rgb(16, 16, 95);
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: cosmic,sans-serif;
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.main .main_content .btn a:hover{
+    background-color: rgb(255, 145, 0);
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.main .main_content .product h3{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    font-family: cosmic,sans-serif;
+    text-transform: uppercase;
+}
+.product{
+    padding-bottom: 50px;
+}
+.product .product_container{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+.product .product_container .item{
+    width: 33.33%;
+    margin: 10px;
+    height: auto;
+}
+.product .product_container .item:hover{
+    box-shadow: 3px 3px 100px 0px rgba(0, 0, 0, .15);
+}
+.product .product_container .item .item_img{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.product .product_container .item .item_img img{
+    width: 100%;
+    height: 250px;
+}
+.product .product_container .item .item_content{
+    color: black;
+    font-family: cosmic,sans-serif;
+    text-align: center;
+    
+}
+.product .product_container .item .item_content h2{
+    color: black;
+    font-weight: bold;
+    font-family: cosmic,sans-serif;
+    text-align: center;
+}
+.product .product_container .item .item_content p{
+    color: black;
+    padding: 10px;
+    font-weight: normal;
+    font-family: cosmic,sans-serif;
+}
+.product .product_container .item .item_content a{
+    text-decoration: none;
+    margin: 50px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: rgb(16, 16, 95);
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: cosmic,sans-serif;
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.1)
+}
+.product .product_container .item .item_content a:hover{
+    background-color: rgb(255, 145, 0);
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.product .product_btn{
+    text-align: center;
+    margin-top: 50px;
+
+}
+.product .product_btn a{
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: rgb(16, 16, 95);
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: cosmic,sans-serif;
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.1)
+
+}
+.product .product_btn a:hover{
+    background-color: rgb(255, 145, 0);
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.keypoint_head {
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    font-family: cosmic,sans-serif;
+    text-transform: uppercase;
+}
+.keypoint_head h2{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    font-family: cosmic,sans-serif;
+    text-transform: uppercase;
+}
+.keypoint{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.keypoint .list li{
+    float: left;
+    list-style: none;
+    padding: 5px;
+    width: 60%;
+    border-left: 2px solid rgb(16, 16, 95);
+    border-radius: 5px;
+    margin: 10px;
+    font-family: cosmix,sans-serif;
+    color: black;
+}
+.keypoint .list li:hover{
+    float: left;
+    list-style: none;
+    padding: 5px;
+    width: 60%;
+    border-left: 2px solid rgb(255, 145, 0);
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 3px 3px 100px 0px rgba(0, 0, 0, .3);
+}
+.keypoint .key_img{
+    float: right;
+    width: 40%;
+}
+.keypoint .key_img img{
+    float: right;
+    width: 500px;
+    height: 80%;
+}
+.testi{
+    padding: 20px;
+}
+.testi h3{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    font-family: cosmic,sans-serif;
+    text-transform: uppercase;
+}
+.testi .testi_container{
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+.testi .testi_container .carousel-inner{
+    background-color: rgba(0, 0, 0, .3);
+    box-shadow: none;
+}
+.testi .testi_container .item{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(16, 16, 95);
+    box-shadow: none;
+}
+.testi .testi_container .item .item_img{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    overflow: hidden;
+}
+.testi .testi_container .item .item_img img{
+    width: 10%;
+    height: 50%;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+.testi .testi_container .item .item_content{
+    color: white;
+    font-family: cosmic,sans-serif;
+    text-align: center;
+    
+}
+.testi .testi_container .item .item_content h3{
+    color: white;
+    font-weight: bold;
+    font-family: cosmic,sans-serif;
+    text-align: center;
+}
+.testi .testi_container .item .item_content p{
+    color: white;
+    padding: 10px;
+    font-weight: normal;
+    font-family: cosmic,sans-serif;
+}
+footer{
+    background-color:rgb(160, 155, 155) ;
+    padding: 50px;
+}
+footer .logo{
+    float: left;
+}
+footer .pages{
+    margin-top: 80px;
+    text-align: center;
+}
+footer .pages h3{
+    color: black;
+    font-size: 20px;
+    font-family: cosmic,sans-serif;
+    text-align: center;
+}
+footer .pages a{
+    text-decoration: none;
+    margin: 10px;
+    color: orangered;
+    font-family: cosmic,sans-serif;
+    font-size: 15px;
+}
+footer .pages a:hover{
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(16, 16, 95);
+    font-family: cosmic,sans-serif;
+    font-size: 15px;
+}
+footer .doc{
+    text-align: center;
+}
+footer .doc h3{
+    color: black;
+    font-size: 20px;
+    font-family: cosmic,sans-serif;
+    text-align: center;
+}
+footer .doc a{
+    text-decoration: none;
+    margin: 10px;
+    color: orangered;
+    font-family: cosmic,sans-serif;
+    font-size: 15px;
+}
+footer .doc a:hover{
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(16, 16, 95);
+    font-family: cosmic,sans-serif;
+    font-size: 15px;
+}
+footer .social{
+    text-align: center;
+}
+footer .social h3{
+    color: black;
+    font-size: 20px;
+    font-family: cosmic,sans-serif;
+    text-align: center;
+}
+footer .social a{
+    text-decoration: none;
+    font-size: 30px;
+    color: orangered;
+    margin: 10px;
+}
+footer .social a:hover{
+    color: rgb(16, 16, 95);
+}
+footer .contact{
+    text-align: center;
+}
+footer .contact h3{
+    color: black;
+    font-size: 20px;
+    font-family: cosmic,sans-serif;
+    text-align: center;
+}
+footer .contact a{
+    text-decoration: none;
+    font-size: 30px;
+    color: orangered;
+    margin: 10px;
+}
+footer .contact a:hover{
+    color: rgb(16, 16, 95);
+}
