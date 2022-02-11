@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>about</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--nav bar-->
+    <nav class="nav nav_top">
+        <div>
+            <a href="#"><img src="https://www.1stop.ai/images/1Stop_logo_New_Png.png" alt="logo" width="150"
+                    class="logo"></a>
+        </div>
+        <div class="nav_side">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="Service.html">Services</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Login/Sign up</a>
+        </div>
+    </nav>
+    <div class="contact_container">
+        <h2>Contact us</h2>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125860.71119402832!2d76.27110486594498!3d9.668459347009913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b087c467cde65bb%3A0x8c9e0c863e1cedbb!2sCherthala%2C%20Kerala!5e0!3m2!1sen!2sin!4v1644580714823!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contact_content">
+            <p><b> Adress: labdbau, aidaudhaid, aiujhduaihda.</b></p>
+            <p><b> call: +91 987654321 </b></p>
+            <p><b> mail: fadadugag@gmail.com</b></p>
+
+        </div>
+
+    </div>
+
+    <!--FeedBack-->
+    <div class="feed">
+        <h2>Write a review</h2>
+        <div class="feed_form">
+            <form name="review" method="post">
+                <input type="text" name="Name" placeholder="Name" required><br>
+                <input type="email" name="Mail" placeholder="Mail id"><br>
+                <input type="Number" name="Number" placeholder="number"><br>
+                <textarea name="Review" id="" cols="7" rows="5" placeholder="suggestions" required></textarea><br>
+                <button type="submit"> Submit</button>
+            </form>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="logo">
+            <a href="#"><img src="https://www.1stop.ai/images/1Stop_logo_New_Png.png" alt="logo" width="150"></a>
+        </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="about.html">About us</a>|
+            <a href="Service.html">Services</a>|
+            <a href="blog.html">Blogs</a>|
+            <a href="#">Login</a>|
+            <a href="#">Sign up</a>
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="">Privacy Policy</a>|
+            <a href="">Terms of use</a>|
+            <a href="">Refund policy</a>
+        </div>
+        <div class="social">
+            <h3>Follow US</h3>
+            <a href="https://www.facebook.com/1Stopai-102490171820303" target="blank"><i class="fa fa-facebook"
+                    aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/1stop.co.in/" target="blank"><i class="fa fa-instagram"
+                    aria-hidden="true"></i></a>
+            <a href="https://in.linkedin.com/company/1stop-ai" target="blank"><i class="fa fa-linkedin"
+                    aria-hidden="true"></i></a>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href="mailto: ambadypradeepcoc@gmail.com" target="blank"><i class="fa fa-envelope"
+                    aria-hidden="true"></i>
+            </a>
+            <a href="tel: +919876543218" target="blank"><i class="fa fa-phone" aria-hidden="true"></i>
+            </a>
+            <a href="https://api.WhatsApp.com/send?phone= +918089919961" target="blank"><i class="fa fa-whatsapp"
+                    aria-hidden="true"></i></a>
+        </div>
+        <hr>
+        <p>Copyright &copy; 2022 1stop. All rights Reserved</p>
+    </footer>
+    </div>
+    <!---form submission-->
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbxYtuQsgDy2-b3VOzpxp0I6j1KKwSb-KlqW7P9WE512dDD2Rexiqf2PDi-1JLby-uUiGQ/exec'
+        const form = document.forms['review']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+                .then(response => alert(
+                    "Thanks for you valuable feedback!!!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+
+    </script>
+    <!---form submission-->
+</body>
+
+</html>

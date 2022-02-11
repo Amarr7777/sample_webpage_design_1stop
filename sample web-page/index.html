@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Login</title>
+    <title>E-commerce</title>
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -20,12 +20,14 @@
 </head>
 
 <body>
+    <!--nav bar-->
     <nav class="nav nav_top">
         <div>
             <a href="#"><img src="https://www.1stop.ai/images/1Stop_logo_New_Png.png" alt="logo" width="150"
                     class="logo"></a>
         </div>
         <div class="nav_side">
+            <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="Service.html">Services</a>
             <a href="blog.html">Blogs</a>
@@ -33,9 +35,10 @@
             <a href="#">Login/Sign up</a>
         </div>
     </nav>
+    <!--main-->
     <div class="main">
         <div class="main_content">
-            <h2>Education is a form of Art and Creativity<br>
+            <h2>Furniture is a form of Art and Creativity<br>
                 <span>Lorem ipsum dolor sit,
                     amet consectetur adipisicing elit.
                     Asperiores, officiis, maxime quos,
@@ -49,6 +52,7 @@
             <div class="btn">
                 <a href="service.html">Book Now</a>
             </div>
+            <!--Product-->
             <div class="product">
                 <h3>Our Products</h3>
                 <div class="product_container">
@@ -100,13 +104,14 @@
 
                 </div>
                 <div class="product_btn">
-                    <a href="serviice.html">See More</a>
+                    <a href="service.html">See More</a>
                 </div>
 
 
 
             </div>
             <hr>
+            <!--Key points-->
             <div class="keypoint_head">
                 <h3>Our Key Highlights</h3>
             </div>
@@ -128,6 +133,7 @@
                 </div>
             </div>
             <hr>
+            <!--Clients-->
             <div class="testi">
                 <h3 class="clients">Our Clients</h3>
                 <div class="testi_container">
@@ -220,18 +226,59 @@
                     </div>
                 </div>
             </div>
+            <hr>
         </div>
+        <!--team-->
+        <div class="team">
+            <h2>Our Team</h2>
+            <div class="team_container">
+                <div class="team_video">
+                    <iframe src="https://www.youtube.com/embed/uVEALvpoiMQ" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="team_content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis soluta reprehenderit explicabo
+                        aut totam, voluptates eveniet impedit ratione maxime eum perspiciatis, ipsam at porro animi
+                        repellat possimus iure aperiam illo. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Illo consequatur, nihil soluta reprehenderit aperiam repellat quidem ipsa similique deleniti
+                        numquam? Nam, adipisci nemo at deleniti laboriosam harum quaerat sapiente voluptatum!</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempora commodi molestiae
+                        inventore. Et deserunt, necessitatibus unde, excepturi ducimus vero dolorum voluptate soluta
+                        nemo velit ex corrupti non adipisci numquam. Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Reiciendis ut quidem, quam ipsam nesciunt beatae! Blanditiis recusandae sunt est placeat
+                        explicabo fugiat velit ab animi deserunt, magnam, cumque accusantium quisquam?</p>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--FeedBack-->
+        <div class="feed">
+            <h2>Write a review</h2>
+            <div class="feed_form">
+                <form name="review" method="post">
+                    <input type="text" name="Name" placeholder="Name"><br>
+                    <input type="email" name="Mail" placeholder="Mail id"><br>
+                    <input type="Number" name="Number" placeholder="number"><br>
+                    <textarea name="Review" id="" cols="7" rows="5" placeholder="suggestions"></textarea><br>
+                    <button type="submit"> Submit</button>
+                </form>
+            </div>
+        </div>
+        <!--footer-->
         <footer>
             <div class="logo">
                 <a href="#"><img src="https://www.1stop.ai/images/1Stop_logo_New_Png.png" alt="logo" width="150"></a>
             </div>
             <div class="pages">
                 <h3>Pages</h3>
-                <a href="">About us</a>|
-                <a href="">Services</a>|
-                <a href="">Blogs</a>|
-                <a href="">Login</a>|
-                <a href="">Sign up</a>
+                <a href="about.html">About us</a>|
+                <a href="Service.html">Services</a>|
+                <a href="blog.html">Blogs</a>|
+                <a href="#">Login</a>|
+                <a href="#">Sign up</a>
             </div>
             <div class="doc">
                 <h3>Documents</h3>
@@ -267,6 +314,26 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <!---form submission-->
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbxYtuQsgDy2-b3VOzpxp0I6j1KKwSb-KlqW7P9WE512dDD2Rexiqf2PDi-1JLby-uUiGQ/exec'
+        const form = document.forms['review']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+                .then(response => alert(
+                    "Thanks for you valuable feedback!!!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+
+    </script>
+    <!---form submission-->
+
 </body>
 
 </html>
